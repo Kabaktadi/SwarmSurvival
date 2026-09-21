@@ -30,9 +30,19 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "063db90b-49a8-4eba-9ef7-91056a0b789c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "FireRelease",
+                    "type": "Button",
+                    "id": "b8a6df7b-091b-490f-b466-0f0228e6291e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": false,
                     "priority": 0
                 }
@@ -218,7 +228,7 @@
                     "name": "",
                     "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Fire",
@@ -255,6 +265,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "90e4723b-42be-4660-b060-5d9b81bee25d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "FireRelease",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
