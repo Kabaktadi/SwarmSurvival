@@ -562,6 +562,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 330585545}
     - target: {fileID: 3928311585954225582, guid: 90d91feb86ce03a4ea34ae6a184c901a, type: 3}
+      propertyPath: _fireCooldown
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928311585954225582, guid: 90d91feb86ce03a4ea34ae6a184c901a, type: 3}
+      propertyPath: _projectileSpeed
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928311585954225582, guid: 90d91feb86ce03a4ea34ae6a184c901a, type: 3}
+      propertyPath: _projectilePrefab
+      value: 
+      objectReference: {fileID: 6731060476440482328, guid: 77d629b4212912c4c9c783df157d57ec, type: 3}
+    - target: {fileID: 3928311585954225582, guid: 90d91feb86ce03a4ea34ae6a184c901a, type: 3}
       propertyPath: inputActions.m_Name
       value: Input Actions
       objectReference: {fileID: 0}
