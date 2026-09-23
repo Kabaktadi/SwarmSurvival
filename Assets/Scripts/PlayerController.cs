@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        
         if (_isFiring && Time.time >= _nextTimeToFire)
         {
             Projectile projectile = _projectilePool.Get();
@@ -55,15 +56,15 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, maxDistance: 300f))
         {
             var lookPosition = hit.point;
-            lookPosition.y = transform.position.y;
-            transform.LookAt(lookPosition);
+            lookPosition.y = _rigidbody.transform.position.y;
+            _rigidbody.transform.LookAt(lookPosition);
         }
     }
 
     void MovePlayer()
     {
-        var targetPosition = transform.position + _inputVector * _speed;
-        transform.position = targetPosition;
+        var targetPosition = _rigidbody.transform.position + _inputVector * _speed;
+        _rigidbody.transform.position = targetPosition;
     }
 
     public void OnMove(InputValue value)
