@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a5579fb8c12474b9f1c8ebc1fdb22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  _timeoutDelay: 3
+  _config: {fileID: 11400000, guid: f35d849bd5b616d489d3871088ed461a, type: 2}
 --- !u!54 &3807823945425173747
 Rigidbody:
   m_ObjectHideFlags: 0

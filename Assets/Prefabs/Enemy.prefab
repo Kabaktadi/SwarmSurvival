@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d82683dd081854a9c0b60e5c7368e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  _speed: 3
+  _config: {fileID: 11400000, guid: ff9b1ee9a6a40cb488523ae4a2cf0867, type: 2}
   _rigidbody: {fileID: 6789824639049522661}
   _healthBar: {fileID: 4089245158548807102}
   _healthBarCanvas: {fileID: 1189814853852643465}

@@ -4,7 +4,7 @@ using UnityEngine.Pool;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float _timeoutDelay = 3f;
+    [SerializeField] private ProjectileConfig _config;
     
     private IObjectPool<Projectile> _objectPool;
     
@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
 
     public void Deactivate()
     {
-        StartCoroutine(DeactivateRoutine(_timeoutDelay));
+        StartCoroutine(DeactivateRoutine(_config.TimeoutDelay));
     }
 
     IEnumerator DeactivateRoutine(float delay)
